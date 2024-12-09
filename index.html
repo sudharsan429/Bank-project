@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        /* Full background image */
+        body {
+            background-image: url('273994-dq2.jpg'); /* Replace with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Makes the background static while scrolling */
+            background-position: center;
+            color: white; /* Ensures text remains visible */
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for header */
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px; /* Centers content with a max-width */
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for sections */
+            border-radius: 8px;
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Banking Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="create.html">Credit</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="withdraw.html">Withdraw</a></li>
+                    <li><a href="details.html">Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to Our MAGADHA Bank</h2>
+            <p>Providing reliable and secure banking services to meet your financial needs.</p>
+        </section>
+
+        <section id="credit" class="section">
+            <h2>Credit</h2>
+            <p>Apply for credit services tailored to your needs.</p>
+            <button class="btn">Learn More</button>
+        </section>
+
+        <section id="deposit" class="section">
+            <h2>Deposit</h2>
+            <p>Securely deposit funds and grow your savings.</p>
+            <button class="btn">Get Started</button>
+        </section>
+
+        <section id="withdraw" class="section">
+            <h2>Withdraw</h2>
+            <p>Access your funds quickly and safely.</p>
+            <button class="btn">Withdraw Now</button>
+        </section>
+
+        <section id="details" class="section">
+            <h2>Details</h2>
+            <p>View transaction details and account summaries.</p>
+            <button class="btn">View Details</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Banking Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

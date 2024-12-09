@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw Services</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Withdraw Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Credit</a></li>
+                    <li><a href="deposit.html">Deposit</a></li>
+                    <li><a href="withdraw.html" class="active">Withdraw</a></li>
+                    <li><a href="details.html">Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="withdraw-info">
+            <h2>Withdraw Funds Easily</h2>
+            <p>Withdraw your funds safely and conveniently from your account with just a few clicks.</p>
+        </section>
+
+        <section class="withdraw-form">
+            <h2>Request a Withdrawal</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="withdraw-amount">Withdrawal Amount:</label>
+                    <input type="number" id="withdraw-amount" name="withdraw-amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="withdraw-method">Withdrawal Method:</label>
+                    <select id="withdraw-method" name="withdraw-method" required>
+                        <option value="cash">Cash</option>
+                        <option value="check">Check</option>
+                        <option value="online">Online Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Withdraw Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Banking Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

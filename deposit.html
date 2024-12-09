@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        header nav ul li a.active {
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .deposit-info {
+            margin-bottom: 20px;
+        }
+        .deposit-form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Deposit Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Credit</a></li>
+                    <li><a href="deposit.html" class="active">Deposit</a></li>
+                    <li><a href="withdraw.html">Withdraw</a></li>
+                    <li><a href="details.html">Details</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="deposit-info">
+            <h2>Deposit Money with Ease</h2>
+            <p>Our deposit services ensure that your funds are securely stored and easily accessible whenever you need them.</p>
+        </section>
+
+        <section class="deposit-form">
+            <h2>Make a Deposit</h2>
+            <form action="./deposit-confirmation.html" method="POST">
+                <div class="form-group">
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="deposit-amount">Deposit Amount:</label>
+                    <input type="number" id="deposit-amount" name="deposit-amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="cash">Cash</option>
+                        <option value="check">Check</option>
+                        <option value="online">Online Transfer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Deposit Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Banking Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
